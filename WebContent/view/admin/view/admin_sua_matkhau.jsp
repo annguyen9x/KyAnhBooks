@@ -81,19 +81,27 @@
 						<hr>
 						<div class="noidung_chinh">
 							<p class="tieude_bang">Thay đổi mật khẩu đăng nhập</p>
+							
+							<div class="col-md-12 col-sm-12 col-xs-12">
+								<div class="alert alert-info text-center">
+								Hệ thống đang trong giai đoạn thử nghiệm, tạm thời khóa chức năng này.
+								<br/>Mọi phản hồi xin gửi về: kyanhbooks@gmail.com/ 034.724.4142.
+								<br/>Trân trọng cảm ơn./. 
+								</div>
+							</div>
 
 							<form method="post" action="/SachKyAnh/AdminSuaMatKhau" id="formCN" onsubmit="return validationPass();" class="form-horizontal">
 								<div class="form-group">
 					            	<label for="pwd" class="col-sm-3 control-label">Mật khẩu mới (<span class="warning">*</span>)</label>
 					            	<div class="col-sm-9">
-					            		<input type="password" class="form-control" name="matkhau" id="matkhau" placeholder="Vui lòng nhập mật khẩu cần thay đổi" >
+					            		<input readonly="readonly" type="password" class="form-control" name="matkhau" id="matkhau" placeholder="Vui lòng nhập mật khẩu cần thay đổi" >
 					            		<span id="errorMatkhau" class="col-xs-12 error warning"></span>
 					            	</div>
 					            </div>
 					            <div class="form-group">
 					            	<label for="rePassword" class="col-sm-3 control-label">Nhập lại mật khẩu (<span class="warning">*</span>)</label>
 					            	<div class="col-sm-9">
-					            		<input type="password" class="form-control" name="nlMatkhau" id="nlMatkhau" placeholder="Nhập lại mật khẩu" >
+					            		<input readonly="readonly" type="password" class="form-control" name="nlMatkhau" id="nlMatkhau" placeholder="Nhập lại mật khẩu" >
 					            		<span id="errorNlMatkhau" class="col-xs-12 error warning"></span>
 					            	</div>
 					            </div>
