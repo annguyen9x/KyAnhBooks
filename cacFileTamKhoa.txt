@@ -2,6 +2,7 @@
 admin_capnhat_taikhoan.jsp
 admin_sua_matkhau.jsp
 admin_sua_taikhoan.jsp
+admin_them_sach.jsp
 
 kho_capnhat_taikhoan.jsp
 
