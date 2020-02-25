@@ -125,6 +125,9 @@
 										<tr>
 											<th>Hình Ảnh</th>
 											<td>
+												<div class="alert alert-warning">
+													Lưu ý: định dạng ảnh ".jpg", kích thước: 304x472px.
+												</div>
 												<input type="file" name="urlhinh" id="urlhinh">
 												<span id="errorHinhAnh" class="col-xs-12 error warning"></span>
 												<%
