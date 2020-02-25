@@ -216,7 +216,7 @@ public class SachDao implements ITFSachDao{
 			conn.setAutoCommit(false);
 			String sql = "Select MaSach, TenSach, DonGia, SoLuong, UrlHinh, NoiDung, TacGia, NamXB, NXB, MaLoaiSach " + 
 						 "From Sach " + 
-						 "Where MaSach= ?";
+						 "Where MaSach like ?";
 			pStatement = conn.prepareStatement(sql);
 			pStatement.setString(1, maSach);
 			rs = pStatement.executeQuery();
@@ -310,9 +310,10 @@ public class SachDao implements ITFSachDao{
 		try {
 			conn = KetNoiDatabase.getConn();
 			conn.setAutoCommit(false);
-			String sql = "Select Top "+ soLuong +" MaSach, TenSach, DonGia, SoLuong, UrlHinh, NoiDung, TacGia, NamXB, NXB, MaLoaiSach " + 
+			String sql = "Select MaSach, TenSach, DonGia, SoLuong, UrlHinh, NoiDung, TacGia, NamXB, NXB, MaLoaiSach " + 
 						 "From Sach " + 
-						 "Order By DonGia DESC ";
+						 "Order By DonGia DESC "
+						 + "LIMIT "+soLuong;
 			pStatement = conn.prepareStatement(sql);
 			rs = pStatement.executeQuery();
 			dsSachNoiBat = new ArrayList<Sach>();
@@ -359,9 +360,10 @@ public class SachDao implements ITFSachDao{
 		try {
 			conn = KetNoiDatabase.getConn();
 			conn.setAutoCommit(false);
-			String sql = "Select Top "+ soLuong +" MaSach, TenSach, DonGia, SoLuong, UrlHinh, NoiDung, TacGia, NamXB, NXB, MaLoaiSach " + 
+			String sql = "Select MaSach, TenSach, DonGia, SoLuong, UrlHinh, NoiDung, TacGia, NamXB, NXB, MaLoaiSach " + 
 						 "From Sach " + 
-						 "Order By NamXB DESC ";
+						 "Order By NamXB DESC "
+						 + "LIMIT "+soLuong;
 			pStatement = conn.prepareStatement(sql);
 			rs = pStatement.executeQuery();
 			dsSachMoi = new ArrayList<Sach>();
