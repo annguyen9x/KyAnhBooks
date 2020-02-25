@@ -10,7 +10,7 @@ public class KetNoiDatabase {
 	public KetNoiDatabase() {
 		String user = "root";
 		String password = "";
-		String url = "jdbc:mysql://localhost/SachKyAnh";
+		String url = "jdbc:mysql://localhost/SachKyAnh?useUnicode=true&characterEncoding=utf-8";
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			conn = DriverManager.getConnection(url, user, password);
