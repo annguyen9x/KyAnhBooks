@@ -13,12 +13,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import org.apache.commons.fileupload.FileItem;
-
 import dao.LoaiSachDao;
 import dao.SachDao;
 import model.LoaiSach;
 import model.Sach;
+import util.ViTriLuuFile;
 
 @WebServlet(name = "AdminXoaSach", urlPatterns = { "/AdminXoaSach" })
 public class AdminXoaSachController extends HttpServlet {
@@ -35,7 +34,7 @@ public class AdminXoaSachController extends HttpServlet {
 		String urlHinh = (sachDao.getSachTheoMaSach(maSach)).getUrlHinh();
 		if( sachDao.delete(maSach) ) {
 			//Xoa hinh anh trong folder
-			File file = new File(AdminThemSachController.VITRILUU_HINHANH + File.separator + urlHinh);
+			File file = new File(ViTriLuuFile.VITRILUU_HINHANH + File.separator + urlHinh);
 			file.delete();
 			
 			//dừng 1,5(s) đợt xóa hình ảnh khỏi folder

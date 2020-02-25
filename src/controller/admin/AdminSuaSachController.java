@@ -22,6 +22,7 @@ import dao.LoaiSachDao;
 import dao.SachDao;
 import model.LoaiSach;
 import model.Sach;
+import util.ViTriLuuFile;
 
 @WebServlet(name = "AdminSuaSach", urlPatterns = { "/AdminSuaSach" })
 public class AdminSuaSachController extends HttpServlet {
@@ -138,7 +139,7 @@ public class AdminSuaSachController extends HttpServlet {
 		if(sachDao.update(sach)) {
 			if(isUrlHinhMoi==true) {
 				//Xóa ảnh cũ trước khi lưu ảnh mới
-				File fileCu = new File(AdminThemSachController.VITRILUU_HINHANH + File.separator + urlHinhTruocUpdate);
+				File fileCu = new File(ViTriLuuFile.VITRILUU_HINHANH + File.separator + urlHinhTruocUpdate);
 				fileCu.delete();
 				//dừng 1,5(s) đợt xóa hình ảnh khỏi folder
 				try {
@@ -147,7 +148,7 @@ public class AdminSuaSachController extends HttpServlet {
 					log("Loi sleep khi insert sach");
 				}
 				
-				File file = new File(AdminThemSachController.VITRILUU_HINHANH + File.separator + urlHinh);
+				File file = new File(ViTriLuuFile.VITRILUU_HINHANH + File.separator + urlHinh);
 				//Ghi hình ảnh vào thư mục
 				for(FileItem item: items) {
 					if( !item.isFormField() ) {

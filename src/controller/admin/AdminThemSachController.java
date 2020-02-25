@@ -23,10 +23,11 @@ import dao.LoaiSachDao;
 import dao.SachDao;
 import model.LoaiSach;
 import model.Sach;
+import util.ViTriLuuFile;
 
 @WebServlet(name = "AdminThemSach", urlPatterns = { "/AdminThemSach" })
 public class AdminThemSachController extends HttpServlet {
-	public static final String VITRILUU_HINHANH = "D:/HK119/JAVA/DACN/DACN/code/SachKyAnh/WebContent/view/user/static/img/sanpham";
+	
 	SachDao sachDao = new SachDao();
 	LoaiSachDao loaiSachDao = new LoaiSachDao();
 	
@@ -128,7 +129,7 @@ public class AdminThemSachController extends HttpServlet {
 			Sach sach = new Sach(maSach, tenSach, donGia, urlHinh, noiDung, tacGia, namXB, nXB, maLoaiSach);
 			if(sachDao.insert(sach)) {
 				//Ghi hình ảnh vào thư mục
-				File file = new File(VITRILUU_HINHANH + File.separator + urlHinh);
+				File file = new File(ViTriLuuFile.VITRILUU_HINHANH + File.separator + urlHinh);
 				for(FileItem item: items) {
 					if( !item.isFormField() ) {
 						try {
@@ -153,6 +154,7 @@ public class AdminThemSachController extends HttpServlet {
 				if( session.getAttribute("DsSach") != null) {
 					session.removeAttribute("DsSach");
 				}
+				
 				List<Sach> dsSach = sachDao.dsSach();
 				session.setAttribute("DsSach", dsSach);
 				Map<String, String> mapTenLoaiSachTheoMLS = new HashMap<String, String>();
