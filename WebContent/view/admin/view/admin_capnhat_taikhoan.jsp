@@ -121,12 +121,14 @@
 													<a type="button" href="/SachKyAnh/AdminSuaTaiKhoanNhanVien?MaNV=<%=nv.getMaNV() %>" class="btn btn-primary">Sửa</a>
 												</th class="text-center">
 												<th>
-													<a type="button" onclick="return xacNhanXoaNhanVien();" href="/SachKyAnh/AdminXoaTaiKhoanNhanVien?MaNV=<%=nv.getMaNV() %>" class="btn btn-danger" style="color:#111">Xóa</a>
+													<a disabled type="button" onclick="return xacNhanXoaNhanVien();" href="/SachKyAnh/AdminXoaTaiKhoanNhanVien?MaNV=<%=nv.getMaNV() %>" class="btn btn-danger" style="color:#111">Xóa</a>
 													<script type="text/javascript">
 														function xacNhanXoaNhanVien(){
-															var xacNhan = confirm("Bạn có chắc chắn muốn xóa nhân viên này không ?");
+															/* var xacNhan = confirm("Bạn có chắc chắn muốn xóa nhân viên này không ?"); */
+															var xacNhan = confirm("Chức năng này tạm thời bị khóa. Mọi phản hồi xin gửi về: kyanhbooks@gmail.com/ 034.724.4142");
 															if( xacNhan == true ){
-																return true;
+																/* return true; */
+																return false;
 															}else{
 																return false;
 															}
