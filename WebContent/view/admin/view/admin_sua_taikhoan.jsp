@@ -83,6 +83,14 @@
 						<div class="noidung_chinh">
 							<p class="tieude_bang">Sửa thông tin tài khoản nhân viên</p>
 							
+							<div class="col-md-12 col-sm-12 col-xs-12">
+								<div class="alert alert-info text-center">
+								Hệ thống đang trong giai đoạn thử nghiệm, tạm thời khóa chức năng này.
+								<br/>Mọi phản hồi xin gửi về: kyanhbooks@gmail.com/ 034.724.4142.
+								<br/>Trân trọng cảm ơn./. 
+								</div>
+							</div>
+
 							<%
 		                    	if(  LoiSuaNhanVien != null ){
 	                    	%>
@@ -259,7 +267,7 @@
 					            </div>
 					            <div class="form-group">
 					            	<div class="col-xs-8 col-xs-offset-4">
-					            		<button type="submit" class="btn">
+					            		<button disabled type="submit" class="btn">
 					            			Cập nhật
 					            		</button>
 					            	</div>
