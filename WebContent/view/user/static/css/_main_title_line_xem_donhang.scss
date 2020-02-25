@@ -1,0 +1,134 @@
+.main_title_line{
+	min-height: 250px;
+	//phần tiêu đề
+	.top_nd_trang{
+		.top{
+			background:#fff;
+			margin-bottom:10px;
+			position:relative;
+			h2{
+				padding:0px;
+				span{
+					text-transform:uppercase;
+					color:#70ba28;
+					font-size:18px;
+					position:relative;
+					background:#fff;
+				}
+			}
+			h2:before{
+				content:"";
+				background:#333;
+				width:100%;
+				height:2px;
+				position:absolute;
+				margin-top:20px;
+			}
+		}
+	}
+	//kt phần tiêu đề
+	//phần nội dung
+	.nd_trang{
+		//phần form nhập mã đh trang theo dõi đơn hàng
+		.form-inline{
+			padding:10px;
+			margin-bottom:20px;
+			background:#eaeaea;
+			label{
+				margin: 0px 10px 10px 0px;
+			}
+			input{
+    			margin-right: 20px;
+			}
+			.btn{
+				background: #ff5400;
+    			color: #fff;
+			}
+		}
+		// kt phần form nhập mã đh trang theo dõi đơn hàng
+
+		//phần nội dung trang xem đơn hàng
+		.thong_tin_dh{
+			margin-top:30px;
+			.table{
+				thead{
+					background: #f6f6f6;
+				}
+				.hinh{
+					img{
+						height: 70px;
+					}
+				}
+				.so_luong{
+					input{
+						text-align: center !important;
+						width: 65px !important;
+					}
+				}
+				.tien{
+					.text_underline{
+						text-decoration:underline;
+					}
+				}
+				.trash{
+					.glyphicon{
+						color:#f47920;
+						&:hover{
+							color:#70ba28 !important;
+						}
+					}
+				}
+			}
+			.thongtin_giaohang_tongtien{
+				.tong_tien{
+					margin-top: 20px;
+					margin-bottom: 10px;
+					width: 100%;
+					float: left;
+					text-align: right;
+					.text_underline{
+						text-decoration:underline;
+					}
+				}
+				.thongtin_giaohang{
+					width: 100%;
+					float: left;
+					background: #eaeaea;
+    				padding: 0px 10px;
+					.btn-default{
+						margin-left: 5px;
+						background:#70ba28;
+						color:#fff;
+					}
+				}
+			}
+			.nut{
+				margin-top: 7px;
+				width:100%;
+				text-align: right;
+				.btn-default{
+					background:#f47920;
+					color:#fff;
+				}
+			}
+			
+		}
+		//kt phần nội dung trang xem đơn hàng
+
+		// phần trang xác nhận email đã đặt hàng
+		.xacnhan_email_dathang{
+			padding:20px 50px 20px 20px;
+			margin-bottom:20px;
+			background:#eaeaea;
+			.nut_cn{
+				float: right;
+				margin-top:20px;
+			}
+			.btn{
+				background: #ff5400;
+    			color: #fff;
+			}
+		}
+		// kt phần trang hủy đơn hàng
+	}
+}

@@ -1,0 +1,59 @@
+.gio_hang{
+	.form_giohang{
+		margin-top:22px;
+		.table{
+			thead{
+				background: #f6f6f6;
+			}
+			.ten_sp{
+				font-weight: bold;
+			}
+			.hinh{
+				img{
+					height:70px;
+				}
+			}
+			.so_luong{
+				input{
+					text-align: center !important;
+					width: 65px !important;
+				}
+			}
+			.tien{
+				.text_underline{
+					text-decoration:underline;
+				}
+			}
+			.trash{
+				.glyphicon{
+					color:#f47920;
+					&:hover{
+						color:#70ba28 !important;
+					}
+				}
+			}
+		}
+		.tong_tien{
+			margin-top: 20px;
+			width:100%;
+			text-align: right;
+			font-size: 15px;
+			.text_underline{
+				text-decoration:underline;
+			}
+		}
+		.nut{
+			margin-top:10px;
+			width:100%;
+			text-align: right;
+			.btn-default{
+				background: #333333;
+				color:#fff;
+				margin:0px;
+			}
+			.btn-default:last-child{
+				background: #f47920;
+			}
+		}
+	}
+}

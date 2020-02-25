@@ -1,0 +1,234 @@
+// phần dùng chung khung ở giữa cho các trang
+.main_center{
+	// top_nd_trang
+	.top_nd_trang{
+		//top
+		.top{
+			height: 40px;
+			background-color:#f5f5f5;
+			h2{
+				padding-left: 20px;
+				font-size: 15px;
+			    font-weight: normal;
+			    letter-spacing: 2px;
+			    line-height:40px;
+			    .glyphicon{
+			    	font-size: 11px ;
+			    	font-weight: normal ;
+			    	color: #666666 ;
+			    }
+			    @include notTablets{
+			    	font-size: 1.2rem;
+			    }
+			}
+		}
+		// kt top
+	}
+	// kt top_nd_trang
+	//phần nội dung trang
+	// .nd_trang{
+		
+	// }
+	// kt phần nội dung trang
+}
+// kt phần dùng chung khung ở giữa cho các trang
+// main riêng của chi tiết sản phẩm
+.main_chitiet_sp{
+	//phần nội dung trang
+	.nd_trang{
+			//left:  chi tiết sách, giới thiệu;;
+			.left{
+				@include minDesktop{
+					margin:15px 50px 15px 70px;
+				}
+			}
+			.left{
+				@include tablets{
+					margin:15px 20px 15px 40px;
+				}
+			}
+			.left{
+				@include notTablets{
+					margin-top:25px;
+				}
+				// phần top_left: hình ảnh sách, tên sách, giá,...;
+				.top_left{
+					.anh{
+						padding-right: 20px;
+						@include tablets{
+							padding-right:0;
+						}
+						@include notTablets{
+							padding:0;
+						}
+						.anh_sp{
+							width: 100%;
+							padding:25px;
+							border:1px solid #eaeaea;
+							@include tablets{
+								padding:20px;
+							}
+							img{
+								width: 100%;
+							}
+						}
+					}
+					.ten_gia_tg_sl{
+						@include minDesktop{
+							padding: 0px 0px 0px 30px ;
+						}
+					}
+					.ten_gia_tg_sl{
+						@include tablets{
+							padding: 0px 0px 0px 30px;
+						}
+					}
+					.ten_gia_tg_sl{
+						@include notTablets{
+							padding:0;
+						}
+						.ten_gia{
+							@include notTablets{
+								margin-top:25px;
+							}
+							.tensp{
+								padding: 0;
+								margin:0;
+								font-size: 24px;
+								color:#373737;
+							}
+							.theloai_giasp{
+								padding: 10px 0px 7px 0px;
+								.loai_sach{
+	   								color:#888;
+								}
+								.trang_thai{
+									color:#0769fd;
+								}
+								.giaban{
+									display: none;
+									.gia_sp{
+										color:#F47920;
+										font-weight:bold;
+										font-size: 15px;
+									}
+								}
+							}
+						}
+						.tg_nxb{
+							padding: 7px;
+							border-bottom:1px solid #eaeaea;
+							border-top:1px solid #eaeaea;
+							.tab{
+								.nam_xb{
+									color:#111111;
+									background: #fff;
+									padding: 5px 12px;
+									cursor: pointer;
+									border: 1px solid #eaeaea;
+									border-radius: 4px;
+								}
+								.active{
+									color:#F47920;
+									border-color: #F47920;
+									border-radius: 4px;
+								}
+							}
+							.nxb, .tac_gia{
+								color:#888;
+							}
+						}
+						.sl_button{
+							padding-top: 18px;
+							// .label_sl{
+							// 	font-weight: bold;
+							// }
+							.sl_mua{
+								width: 70px;
+								text-align:center;
+								margin-bottom:20px;
+							}
+							.nut{
+								font-size: 12px !important;
+								
+								.margin_left{
+									margin-left: -35px;
+								}
+								.bg_btn{
+									background-color:#f47920;
+									color:#fff;
+								}
+								.btn{
+								 	@include tablets{
+									 	font-size:10px;
+									}
+								}
+								
+								@include notDesktop{
+									.margin_right{
+										margin-right: 0px;
+									}
+								}
+							}
+							
+						}
+					}
+				}
+				// kt phần top_left: hình ảnh sách, tên sách, giá,...;
+				
+				// phần bottom_leff: giới thiệu sách
+				.bottom_leff{
+					margin-top:25px;
+					.tieude_gt{
+						h3{
+							color: #f47920;
+							font-size: 24px;
+							line-height: 24px;
+							height: 24px;
+							padding: 0;
+						}
+					}
+					.nd_gt{
+						padding: 20px;
+						margin-bottom: 15px;
+						p{
+							text-align: justify;
+						}
+					}
+				}
+				// kt phần bottom_leff: giới thiệu sách
+				//phần bình luận facebook
+				.bottom_leff_facebook{
+					padding: 0px;
+					margin-bottom:20px; 
+					border: 1px solid #e8e8e8;
+					.top{
+						.tieude{
+							background:#337ab7; 
+							color:#fff; 
+							padding:10px 15px; 
+							border:1px solid #337ab7; 
+							border-radius: 3px 3px 0px 0px;
+						}
+					}
+				}
+				// kt phần bình luận facebook
+			}
+			// kt left: chi tiết sách, giới thiệu;
+			
+			// right: hỗ trợ mua hàng, sp cùng loại;
+			.right{
+				@include minDesktop{
+					margin: 35px 70px 15px 50px;
+				}
+			}
+			.right{
+				@include tablets{
+					margin:35px 40px 15px 5px;
+				}
+			}
+			// kt right
+	}
+	//kt phần nội dung trang
+}
+// main chi tiết sản phẩm

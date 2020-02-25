@@ -1,0 +1,69 @@
+.main_dangky{
+	.padding-left0{
+		@include tablets{
+			padding: 0px;
+		}
+	}
+	.left{
+		margin-top:20px;
+		.menu_taikhoan{
+			h2{
+				margin:0px;
+				height: 40px;
+				line-height:40px;
+				padding-left: 20px;
+				background-color:#f47920;
+				color:#fff;
+				text-transform:uppercase;		
+				font-size: 1.6rem;
+			}
+			ul{
+				padding: 10px;
+				li{
+					a{
+						padding: 10px 15px 10px 0px;
+						border-bottom: 1px dotted #eaeaea;
+						width: 100%;
+						display: inline-block;
+					}
+					&:last-child a{
+						border-bottom: none;
+					}
+				}
+			}
+		}
+	}
+	.right{
+		.padding-0{
+			padding: 0px;
+		}
+		.nd_trang{
+			h2{
+				font-size: 1.6rem;
+				text-transform: uppercase;
+				color: #333;
+				margin-bottom: 30px ;
+				.lay_mk{
+					font-size:15px;
+					text-transform:none;
+					font-weight: bold;
+				}
+			}
+			.my_border{
+				padding:10px;
+			}
+			form{
+				.form-group{
+					.btn{
+						background-color: #F47920;
+						color: #FFF;
+					}
+					.warning{
+						color: red;
+					}
+				}
+
+			}
+		}
+	}
+}

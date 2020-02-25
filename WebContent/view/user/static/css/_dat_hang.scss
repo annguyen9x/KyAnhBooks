@@ -1,0 +1,77 @@
+// Trang đặt hàng
+.dat_hang{
+	margin-top:12px;
+	.form_dathang{
+		.padding-0{
+			padding: 2px !important;
+		}
+		.error{
+			color:red;
+		}
+		h5{
+			padding: 10px;
+			margin: 10px 0px 0px 0px;
+			text-transform: uppercase;
+			color: #fff;
+			background: #70ba28;
+		}
+		.noi_dung{
+			padding: 10px;
+			font-size: 15px;
+    		line-height: 24px;
+    		min-height:470px;
+			p{
+				text-transform: uppercase;
+				font-size: 14px;
+				font-weight: bold;
+			}
+			.table{
+				tr{
+					td{
+						border-bottom: 1px solid #ddd;
+						border-top: none;
+					}
+				}
+				.hinh{
+					img{
+						height: 70px;
+					}
+				}
+				.text_underline{
+					text-decoration: underline;
+				}
+			}
+		}
+		.tong_tien{
+			font-size: 16px;
+		}
+		.btn{
+			background:#f47920;
+			color:#fff;
+			float: right;
+			margin-right:7px;
+		}
+	}
+}
+// kt Trang đặt hàng
+
+// trang đặt hàng hoàn tất
+.dathang_hoantat{
+	.my_border{
+		padding: 10px 20px;
+	}
+	.ma_dh{
+		font-size: 18px;
+		font-weight: bold;
+		color: #f47920;
+	}
+	.text_underline{
+		text-decoration: underline;
+	}
+	.btn{
+		background:#f47920;
+		color:#fff;
+		float:right;
+	}
+}
+// kt trang đặt hàng hoàn tất

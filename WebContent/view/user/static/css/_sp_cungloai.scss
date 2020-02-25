@@ -1,0 +1,157 @@
+// main riêng của sản phẩm cùng loại
+.main_sp_cungloai{
+	//phần nội dung trang
+	.nd_trang{
+			//left:  sản phẩm cùng loại;
+			.left{
+				@include minDesktop{
+					margin:15px 0px 15px 70px;
+				}
+			}
+			.left{
+				@include tablets{
+					margin:15px 20px 15px 40px;
+				}
+			}
+			.left{
+				@include notTablets{
+					margin-top:25px;
+				}
+				.group-right-list-sp{
+				  	.padding-0{
+						padding:0px;
+					}
+					@include minTablets{
+						padding: 0px 5px;
+					}
+				}
+
+				// phần chung cho các sp bên trái
+					.grid_group_sp{
+						.padding-0{
+							padding:0px;
+						}
+						.group_sp{
+							text-align: center;
+							margin:10px;
+							@include notTablets{
+								margin:10px 0px;
+							}
+							.anh_sp{
+								position: relative;
+								padding: 25px 0px;
+								border-bottom:1px solid #eaeaea;
+								&:hover{
+									img{
+										transition:0.7s;
+										transform:translate(-5px, 5px);
+									}
+									.them_gh{
+										opacity:0.8;
+										display: inline-block;
+										.text{
+											color:#fff;
+										}
+										&:hover{
+											opacity:1;
+											background: #F47920;
+											display: inline-block;
+										}
+									}
+								}
+								a{
+									width: 65%;
+									display: inline-block;
+									@include notTablets{
+										width: 140px;
+									}
+									img{
+										width: 100%;
+									}
+								}
+								.them_gh{
+									position: absolute;
+									bottom: 0;
+									left: 0;
+									z-index: 2;
+									display: none;
+									background: #333;
+									width: 100%;
+									height: 40px;
+									line-height: 40px;
+									text-align:center;
+									color: #fff;
+									.text{
+										color:#fff;
+									}
+								}
+							}
+							.tensp_giasp{
+								padding: 10px 12px;
+								.tensp{
+									margin:0;
+									height: 54px;
+									font-size: 1.5rem;
+									line-height: 18px;
+									text-align: justify;
+									@include notTablets{
+										text-align: center;
+									}
+									@include tablets{
+										height: 72px;
+										font-size: 1.3rem;
+									}
+								}
+								.giasp{
+									height: 42px;
+									line-height: 18px;
+									.gia_goc{
+										color:#333;
+										font-size:12px;
+										font-weight: bold;
+										@include tablets{
+											display: inline-block;
+											width: 100%;
+											text-align: center;
+										}
+									}
+									.chi_tiet{
+										margin-left: 7px;
+										padding:4px 7px;
+										background-color:#F47920;
+										border-radius: 3px;
+										color:#fff;
+										font-size:12px;
+										font-weight: bold;
+										text-decoration: none;
+										@include tablets{
+											display: inline-block;
+											width: 100%;
+											text-align: center;
+											margin: 0px;
+										}
+									}
+								}
+							}
+						}
+					}
+				// kt phần chung cho các sp bên trái
+			}
+			// kt left: sản phẩm cùng loại;
+			
+			// right: hỗ trợ mua hàng, sp cùng loại;
+			.right{
+				@include minDesktop{
+					margin: 35px 70px 15px 50px;
+				}
+			}
+			.right{
+				@include tablets{
+					margin:35px 40px 15px 5px;
+				}
+			}
+			// kt right
+	}
+	//kt phần nội dung trang
+}
+//  main riêng của sản phẩm cùng loại
