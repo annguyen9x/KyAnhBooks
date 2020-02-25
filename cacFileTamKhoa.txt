@@ -1,0 +1,8 @@
+------------- Khoa cap nhat tai khoan, doi mat khau-------------
+admin_capnhat_taikhoan.jsp
+admin_sua_matkhau.jsp
+admin_sua_taikhoan.jsp
+
+kho_capnhat_taikhoan.jsp
+
+giaohang_capnhat_taikhoan.jsp
