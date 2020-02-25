@@ -132,7 +132,7 @@ public class LoaiSachDao implements ITFLoaiSachDao{
 			if( rs.next() ) {
 				loaiSach = new LoaiSach();
 				loaiSach.setMaLoaiSach(rs.getString("MaLoaiSach"));
-				loaiSach.setTenLoaiSach(rs.getNString("TenLoaiSach"));
+				loaiSach.setTenLoaiSach(rs.getString("TenLoaiSach"));
 			}
 			conn.commit();
 			return loaiSach;
@@ -168,7 +168,7 @@ public class LoaiSachDao implements ITFLoaiSachDao{
 			while( rs.next() ) {
 				LoaiSach loaiSach = new LoaiSach();
 				loaiSach.setMaLoaiSach(rs.getString("MaLoaiSach"));
-				loaiSach.setTenLoaiSach(rs.getNString("TenLoaiSach"));
+				loaiSach.setTenLoaiSach(rs.getString("TenLoaiSach"));
 				dsLoaiSach.add(loaiSach);
 			}
 			conn.commit();

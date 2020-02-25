@@ -223,7 +223,7 @@ public class SachDao implements ITFSachDao{
 			sach = new Sach ();
 			if( rs.next() ) {
 				sach.setMaSach(rs.getString("MaSach"));
-				sach.setTenSach(rs.getNString("TenSach"));
+				sach.setTenSach(rs.getString("TenSach"));
 				sach.setDonGia(rs.getFloat("DonGia"));
 				sach.setSoLuong(rs.getInt("SoLuong"));
 				sach.setUrlHinh(rs.getString("UrlHinh"));
@@ -270,7 +270,7 @@ public class SachDao implements ITFSachDao{
 			while( rs.next() ) {
 				Sach sach = new Sach();
 				sach.setMaSach(rs.getString("MaSach"));
-				sach.setTenSach(rs.getNString("TenSach"));
+				sach.setTenSach(rs.getString("TenSach"));
 				sach.setDonGia(rs.getFloat("DonGia"));
 				sach.setSoLuong(rs.getInt("SoLuong"));
 				sach.setUrlHinh(rs.getString("UrlHinh"));
@@ -320,7 +320,7 @@ public class SachDao implements ITFSachDao{
 			while( rs.next() ) {
 				Sach sach = new Sach();
 				sach.setMaSach(rs.getString("MaSach"));
-				sach.setTenSach(rs.getNString("TenSach"));
+				sach.setTenSach(rs.getString("TenSach"));
 				sach.setDonGia(rs.getFloat("DonGia"));
 				sach.setSoLuong(rs.getInt("SoLuong"));
 				sach.setUrlHinh(rs.getString("UrlHinh"));
@@ -370,7 +370,7 @@ public class SachDao implements ITFSachDao{
 			while( rs.next() ) {
 				Sach sach = new Sach();
 				sach.setMaSach(rs.getString("MaSach"));
-				sach.setTenSach(rs.getNString("TenSach"));
+				sach.setTenSach(rs.getString("TenSach"));
 				sach.setDonGia(rs.getFloat("DonGia"));
 				sach.setSoLuong(rs.getInt("SoLuong"));
 				sach.setUrlHinh(rs.getString("UrlHinh"));
@@ -420,7 +420,7 @@ public class SachDao implements ITFSachDao{
 			while( rs.next() ) {
 				Sach sach = new Sach();
 				sach.setMaSach(rs.getString("MaSach"));
-				sach.setTenSach(rs.getNString("TenSach"));
+				sach.setTenSach(rs.getString("TenSach"));
 				sach.setDonGia(rs.getFloat("DonGia"));
 				sach.setSoLuong(rs.getInt("SoLuong"));
 				sach.setUrlHinh(rs.getString("UrlHinh"));
@@ -470,7 +470,7 @@ public class SachDao implements ITFSachDao{
 			dsTenSachTheoLoaiSach = new ArrayList<Sach>();
 			while( rs.next() ) {
 				Sach sach = new Sach();
-				sach.setTenSach(rs.getNString("TenSach"));
+				sach.setTenSach(rs.getString("TenSach"));
 
 				dsTenSachTheoLoaiSach.add(sach);
 			}
@@ -513,7 +513,7 @@ public class SachDao implements ITFSachDao{
 			while( rs.next() ) {
 				Sach sach = new Sach();
 				sach.setMaSach(rs.getString("MaSach"));
-				sach.setTenSach(rs.getNString("TenSach"));
+				sach.setTenSach(rs.getString("TenSach"));
 				sach.setDonGia(rs.getFloat("DonGia"));
 				sach.setSoLuong(rs.getInt("SoLuong"));
 				sach.setUrlHinh(rs.getString("UrlHinh"));
@@ -597,7 +597,7 @@ public class SachDao implements ITFSachDao{
 			while( rs.next() ) {
 				Sach sach = new Sach();
 				sach.setMaSach(rs.getString("MaSach"));
-				sach.setTenSach(rs.getNString("TenSach"));
+				sach.setTenSach(rs.getString("TenSach"));
 				sach.setDonGia(rs.getFloat("DonGia"));
 				sach.setSoLuong(rs.getInt("SoLuong"));
 				sach.setUrlHinh(rs.getString("UrlHinh"));
